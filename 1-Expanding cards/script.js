@@ -4,25 +4,25 @@ const panels = document.querySelectorAll('.panel');
 //EventListeners
 eventListeners();
 function eventListeners(){
-    //add listener on every panel element
-    panels.forEach(element => {
-        element.addEventListener('click', activePicture)
+    //add listener on every panel
+    panels.forEach(panel => {
+        panel.addEventListener('click', activePicture)
     })
 }
 //Functions
 
-//To add active class for clicked element
+//To add active class for clicked panel
 function activePicture(){
     //remove .active from others
     removeActive();
     //add .active class
     this.classList.add('active');
 }
-//To remove active class from last element
+//To remove active class from last Expanded panel
 function removeActive(){
-    panels.forEach(element =>{
-        if(element.classList.contains('active')){
-            element.classList.remove('active');
+    panels.forEach(panel =>{
+        if(panel.classList.contains('active')){
+            panel.classList.remove('active');
         }
     })
 }
