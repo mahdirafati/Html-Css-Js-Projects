@@ -13,6 +13,7 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
 }
 .container {
   display: flex;
@@ -30,6 +31,7 @@ body {
   margin: 10px;
   position: relative;
   transition: flex 0.7s ease-in;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .panel h3 {
   font-size: 24px;
