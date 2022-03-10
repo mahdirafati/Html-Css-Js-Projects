@@ -6,21 +6,26 @@ let filterInput;
 //EventListeners
 eventListeners();
 function eventListeners(){
-    txtInput.addEventListener('keyup', validateInput)
-    checkBtn.addEventListener('click', checkPalindrome)
+    txtInput.addEventListener('keyup', validateInput);
+    checkBtn.addEventListener('click', checkPalindrome);
+    //To do the checkPalindrome even when user click Enter
+    window.addEventListener('keydown', (event)=>{
+        if(event.key=='Enter') checkPalindrome();
+    })
 }
 //Functions
+//To validate user input everytime he enter a letter
 function validateInput(){
     filterInput = this.value.replace(/[^A-Z0-9]/ig,'');
     if(filterInput){
         checkBtn.classList.add('active');
     }else{
-        infoTxt.style.display = 'none';
         checkBtn.classList.remove('active');
+        infoTxt.style.display = 'none';
     }
     
 }
-
+//To check that input is palindrome or not
 function checkPalindrome(){
     const reverseInput = filterInput.split('').reverse().join('');
     if(filterInput === reverseInput) {
