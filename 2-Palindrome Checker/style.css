@@ -58,11 +58,16 @@ header p {
   border-radius: 5px;
   background: #aa57cc;
 }
+.inputs button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
 .info-txt {
   display: none;
   font-size: 17px;
   text-align: center;
   margin-bottom: 18px;
+  transition: all ease 0.3s;
 }
 .info-txt span {
   color: #aa57cc;
