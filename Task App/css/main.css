@@ -95,4 +95,58 @@ section {
   width: 70%;
   margin-top: 3em;
 }
+
+section.features-section {
+  background: #20272e;
+  color: white;
+}
+
+section.features-section img {
+  display: none;
+}
+
+ul.features-list {
+  margin: 0;
+  padding: .1em;
+}
+
+ul.features-list li {
+  position: relative;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+}
+
+ul.features-list li:before {
+  content: "";
+  position: absolute;
+  left: -2em;
+  width: 20px;
+  height: 20px;
+  background-image: url(../assets/images/bullet.svg);
+  background-size: contain;
+  margin-right: .5em;
+}
+
+.testimonials-section {
+  background: var(--primary-color);
+  color: white;
+}
+
+.testimonials-section ul li {
+  background: #006bd6;
+  text-align: center;
+  width: 80%;
+  padding: 2em 1em;
+  margin: 0 auto 5em auto;
+  border-radius: 1em;
+}
+
+.testimonials-section ul li img {
+  width: 5em;
+  height: 5em;
+  border: 5px solid #006bd6;
+  border-radius: 50%;
+  margin-top: -4.5em;
+}
 /*# sourceMappingURL=main.css.map */
