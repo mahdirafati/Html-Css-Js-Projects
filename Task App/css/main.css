@@ -14,21 +14,6 @@ body {
   padding: 1em;
 }
 
-.navbar .logo {
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
-  font-size: 1.2em;
-}
-
-.navbar .logo span {
-  color: var(--primary-color);
-}
-
-.navbar .mobile-menu {
-  cursor: pointer;
-}
-
 .navbar .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,7 +21,78 @@ body {
   place-content: space-between;
 }
 
-.navbar nav {
+.navbar .container .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}
+
+.navbar .container .logo span {
+  color: var(--primary-color);
+}
+
+.navbar .container .mobile-menu {
+  cursor: pointer;
+}
+
+.navbar .container nav {
   display: none;
+}
+
+a {
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero .left-col .subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: gray;
+  letter-spacing: .3em;
+}
+
+.hero .left-col h1 {
+  font-size: 2.5em;
+  line-height: 1.3em;
+  margin-top: .2em;
+}
+
+.hero .left-col .primary-cta {
+  text-decoration: none;
+  background: var(--primary-color);
+  color: white;
+  padding: .6em 1.3em;
+  border-radius: 5em;
+  font-size: 1.4em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.hero .left-col .watch-video-cta {
+  display: block;
+  margin-top: 1em;
+}
+
+.hero .left-col .watch-video-cta img {
+  margin-right: .5em;
+}
+
+.hero .hero-img {
+  width: 70%;
+  margin-top: 3em;
 }
 /*# sourceMappingURL=main.css.map */
