@@ -25,6 +25,7 @@ body {
       }
       .mobile-menu {
          cursor: pointer;
+         user-select: none;
       }
       nav {
          display: none;
@@ -167,9 +168,6 @@ ul.features-list {
    }
 }
 //Mobile Navigation
-nav.menu-btn {
-   display: block;
-}
 nav {
    position: fixed;
    z-index: 5;

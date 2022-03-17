@@ -34,6 +34,10 @@ body {
 
 .navbar .container .mobile-menu {
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .navbar .container nav {
@@ -188,10 +192,6 @@ ul.features-list li:before {
 .contact-section iframe {
   width: 100%;
   height: 300px;
-}
-
-nav.menu-btn {
-  display: block;
 }
 
 nav {
