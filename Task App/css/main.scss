@@ -213,7 +213,7 @@ nav {
       justify-content: unset;
    }
 
-   .navbar nav {
+   .navbar .container nav {
       display: flex;
       justify-content: space-between;
       background: none;
@@ -307,15 +307,16 @@ nav {
 
    .features-section {
       position: relative;
-      img {
-         display: block;
-         position: absolute;
-         right: 0;
-         width: 350px;
-         bottom: -2em;
+      .container {
+         img {
+            display: block;
+            position: absolute;
+            right: 0;
+            width: 350px;
+            bottom: -2em;
+         }
       }
    }
-
    .testimonials-section ul {
       display: flex;
 

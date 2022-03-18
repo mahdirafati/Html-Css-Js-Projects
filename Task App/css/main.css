@@ -246,7 +246,7 @@ nav .mobile-menu-exit {
         -ms-flex-pack: unset;
             justify-content: unset;
   }
-  .navbar nav {
+  .navbar .container nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -259,30 +259,30 @@ nav .mobile-menu-exit {
     width: 100%;
     padding: 0;
   }
-  .navbar nav ul {
+  .navbar .container nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .navbar nav a {
+  .navbar .container nav a {
     color: black;
     font-size: 1em;
     padding: 0.1em 1em;
   }
-  .navbar nav ul.primary-nav {
+  .navbar .container nav ul.primary-nav {
     margin: 0;
   }
-  .navbar nav li.current a {
+  .navbar .container nav li.current a {
     font-weight: bold;
   }
-  .navbar nav li.go-premium-cta a {
+  .navbar .container nav li.go-premium-cta a {
     color: var(--primary-color);
     border: 3px solid var(--primary-color);
     font-weight: bold;
     border-radius: 5em;
     margin-top: -0.2em;
   }
-  .navbar nav li.go-premium-cta a:hover {
+  .navbar .container nav li.go-premium-cta a:hover {
     background: var(--primary-color);
     color: white;
   }
@@ -338,7 +338,7 @@ nav .mobile-menu-exit {
   .features-section {
     position: relative;
   }
-  .features-section img {
+  .features-section .container img {
     display: block;
     position: absolute;
     right: 0;
